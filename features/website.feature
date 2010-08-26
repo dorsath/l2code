@@ -6,3 +6,8 @@ Feature: Show website pages
 	Scenario: See homepage
 		Given I am on the homepage
 		Then I should see "L2code"
+
+	Scenario: See about
+		Given I am on the homepage
+		When I follow "about"
+		Then I should see "About"
