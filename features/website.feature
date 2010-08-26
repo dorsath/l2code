@@ -5,4 +5,4 @@ Feature: Show website pages
 
 	Scenario: See homepage
 		Given I am on the homepage
-		Then I should see "L2Code"
+		Then I should see "L2code"
