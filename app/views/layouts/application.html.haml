@@ -4,7 +4,9 @@
     %title L2code
   %body
     %ul#menu
+      %li=link_to 'home', root_path
       %li=link_to 'about', about_path
+      %li=link_to 'technology', technology_path
       %li=link_to 'contact', contact_path
     #content
       - if flash[:notice].present?

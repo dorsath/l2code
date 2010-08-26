@@ -8,6 +8,10 @@ class PagesController < ApplicationController
   def contact
   end
 
+  def technology
+
+  end
+
   def contact_sent
     ContactMailer.contact_form(params[:contact]).deliver
 

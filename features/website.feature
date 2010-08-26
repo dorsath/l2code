@@ -31,3 +31,8 @@ Feature: Show website pages
 		Then I should see "Contactform message from Ronald Hecker" in the email subject
 		And I should see the email delivered from "ronald@boshecker.nl"
 		And I should see "How do i shot web" in the email body
+
+	Scenario: See technology
+		Given I am on the homepage
+		When I follow "technology"
+		Then I should see "Technology"
