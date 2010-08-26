@@ -16,6 +16,7 @@ group :test do
 #gem "rspec-rails", ">= 2.0.0.beta.19"
 	gem 'spork'
 	gem 'launchy'
+	gem 'email_spec'
 #gem 'webrat'
 end
 
@@ -26,7 +27,7 @@ end
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug'
+ gem 'ruby-debug'
 
 # Bundle the extra gems:
 # gem 'bj'

@@ -1,1 +1,9 @@
 %h1 Contact
+=form_tag '/contact/sent' do
+  =label_tag 'contact_name','Name'
+  =text_field_tag 'contact[name]'
+  =label_tag 'contact_email','Email address'
+  =email_field_tag 'contact[email]'
+  =label_tag 'contact_message','Message'
+  =text_area_tag 'contact[message]'
+  =submit_tag 'send'

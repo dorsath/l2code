@@ -6,4 +6,7 @@
     %ul#menu
       %li=link_to 'about', about_path
       %li=link_to 'contact', contact_path
-    #content=yield
+    #content
+      - if flash[:notice].present?
+        %p=flash[:notice]
+      =yield
