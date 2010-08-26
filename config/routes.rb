@@ -54,6 +54,7 @@ Website::Application.routes.draw do |map|
   #
   
   match 'about' => "pages#about"
+  match 'contact' => "pages#contact"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.

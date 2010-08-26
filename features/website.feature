@@ -11,3 +11,9 @@ Feature: Show website pages
 		Given I am on the homepage
 		When I follow "about"
 		Then I should see "About"
+
+	Scenario: See contact
+		Given I am on the homepage
+		When I follow "contact"
+		Then I should see "Contact"
+
