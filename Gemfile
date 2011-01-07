@@ -6,14 +6,13 @@ gem 'rails', '3.0.0.beta4'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
-gem 'capybara'
+gem 'capybara', '0.3.9'
 gem 'database_cleaner'
 gem 'haml'
-gem "rspec", ">= 2.0.0.beta.19", :group => :test
+gem "rspec", :group => :test
 group :test do
 	gem 'cucumber-rails'
 	gem 'cucumber'
-#gem "rspec-rails", ">= 2.0.0.beta.19"
 	gem 'spork'
 	gem 'launchy'
 	gem 'email_spec'
