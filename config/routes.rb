@@ -53,13 +53,13 @@ Website::Application.routes.draw do |map|
   # See how all your routes lay out with "rake routes"
   #
   
-  match 'about' => "pages#about"
   match 'contact' => "pages#contact"
   match 'contact/sent' => "pages#contact_sent"
-  match 'technology' => "pages#technology"
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
   
   root :to => "pages#index"
+  
+  resources :pages, :path => "/"
 end
